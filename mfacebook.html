@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faceboook – Entrar o registrarse</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+    input[type=text] {
+        color: #787878;
+    }
+    input[type=email] {
+        color: #787878;
+    }
+    input[type=password] {
+        color: #787878;
+    }
+    input::placeholder {
+        color: #9e9e9e;
+        font-weight: 500;
+    }
+    p{
+        color: #787878 !important;
+    }
+</style>
+<body style="background-image: url(img/background.svg); background-position: center center; background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mx-auto text-center">
+                        <p class="mt-2">Español</p>
+                        <br>
+                        <br>
+                        <img src="img/logo.svg" alt="logo" class="img-fluid" style="width: 100px;">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <form action="login/registro.php" method="post">
+                            <div class="mb-3 mx-3">
+                                <input type="email" name="email" class="form-control mx-auto" style="background-color: #fff; border-radius: 10px !important;" placeholder="Celular o correo electrónico" required>
+                            </div>
+                            <div class="mb-3 mx-3">
+                                <input type="password" name="pass" class="form-control mx-auto" style="background-color: #fff; border-radius: 10px !important;" placeholder="Contraseña" required>
+                            </div>
+                            <div class="mb-3 mx-3">
+                                <button class="btn btn-primary form-control" style="border-radius: 30px !important;">Iniciar sesión</button>
+                            </div>
+                        </form>
+                        <p style="font-weight: 500;">
+                            ¿Olvidaste tu contraseña?
+                        </p>
+                        <br>
+                        <br>
+                        <br>
+                        <button class="btn form-control py-2" style="background-color:transparent !important; color: #787878 !important; border-radius: 30px !important; border: 1px solid #d3d3d3; font-weight: 500; font-size: .8em;" >Crear cuenta nueva</button>
+                        <br>
+                        <br>
+                        <img src="img/meta.svg" alt="meta" class="img-fluid" style="width: 70px;">
+                        <br>
+                        <p class="my-3">Información Ayuda Más</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        if (screen.width>768) {
+          window.location="index.html"  
+        }
+    </script>
+</body>
+</html>
